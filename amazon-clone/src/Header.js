@@ -1,16 +1,21 @@
 //rfc and enter
 import React from "react";
 import { FaSearch, FaShoppingCart } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { useStateValue } from "./StateProvider";
 import "./Header.css";
 
 export default function Header() {
+  const [{ basket }] = useStateValue();
   return (
     <div className="header">
-      <img
-        className="header_logo"
-        src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
-        alt="amazon_logo"
-      />
+      <Link to="/">
+        <img
+          className="header_logo"
+          src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
+          alt="amazon_logo"
+        />
+      </Link>
 
       <div className="header_search">
         <input className="header_searchInput" type="text" />
@@ -26,10 +31,14 @@ export default function Header() {
           <span className="header_item1">Returns</span>
           <span className="header_item2">& Orders</span>
         </div>
-        <div className="header_basket">
-          <FaShoppingCart />
-          <span className="header_item2 header_basketCount">0</span>
-        </div>
+        <Link to="/checkout">
+          <div className="header_basket">
+            <FaShoppingCart />
+            <span className="header_item2 header_basketCount">
+              {basket?.length}
+            </span>
+          </div>
+        </Link>
       </div>
     </div>
   );
