@@ -11,7 +11,7 @@ You should see the following </br>
 and after you into the directory type `npm start` and hit enter. Runs the app in the development mode.
 Open http://localhost:3000 to view it in your browser. The page will reload when you make changes. You may also see any lint errors in the console.
 
-I am using firebase.com to host my clone site. `Create console` and `create project` after the project is created we click the following button. Also run `npm i firebase` in your terminal.</br>
+I am using [firebase.com](https://console.firebase.google.com/u/0/) to host my clone site. `Create console` and `create project` after the project is created we click the following button. Also run `npm i firebase` in your terminal.</br>
 ![img](https://cdn.discordapp.com/attachments/947060629066354689/999319460601139210/unknown.png)
 </br>This is all we have to bother about, that said copy the code and paste in your new terminal.</br>
 
@@ -27,7 +27,7 @@ I am using firebase.com to host my clone site. `Create console` and `create proj
 
 ### Styling Icons
 
-`react-icons.github.io/react-icons/search?q=shop` copy the code `npm install react-icons ` and paste it into your terminal to install react-icons in your workplace. Search for `icon` and copy and paste the npm code into your terminal `import { icon_name } from "react-icons/fa";`
+[react-icons.github.io/react-icons/search?q=shop](https://react-icons.github.io/react-icons/search?q=shop) copy the code `npm install react-icons ` and paste it into your terminal to install react-icons in your workplace. Search for `icon` and copy and paste the npm code into your terminal `import { icon_name } from "react-icons/fa";`
 
 ### Deploy App
 
@@ -36,7 +36,7 @@ As mentioned above, we are going to use firebase to ease things out for us. Logi
 </br> -> Hosting </br>
 -> Use an existing project </br>
 -> clone </br>
--> use as your public directory? : build </br>
+-> use as your public directory? : build </br></br>
 run `npm run build` on your terminal, creates a build directory with a production build of your app.
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
