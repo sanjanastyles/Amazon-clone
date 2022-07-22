@@ -31,14 +31,14 @@
 
 .product > img {
   max-height: 200px;
-  padding-top: 1  5px;
+  padding-top: 1 5px;
   width: 100%;
   object-fit: contain;
   margin-bottom: 15px;
 }
 
 .product > button {
-  background: #f0c14b;
+  background-image: linear-gradient(#faecc8, #f0c250);
   border: 1px solid;
   margin-top: 10px;
   border-color: #a88734 #9c7e31 #846a29;
