@@ -10,7 +10,7 @@ You should see the following </br>
 
 and after you into the directory type `npm start` and hit enter.
 
-I am using firebase.com to host my clone site. `Create console` and `create project` after the project is created we click the following button </br>
+I am using firebase.com to host my clone site. `Create console` and `create project` after the project is created we click the following button. Also run `npm i firebase` in your terminal.</br>
 ![img](https://cdn.discordapp.com/attachments/947060629066354689/999319460601139210/unknown.png)
 </br>This is all we have to bother about, that said copy the code and paste in your new terminal.</br>
 
@@ -27,3 +27,13 @@ I am using firebase.com to host my clone site. `Create console` and `create proj
 ### Styling Icons
 
 `react-icons.github.io/react-icons/search?q=shop` copy the code `npm install react-icons ` and paste it into your terminal to install react-icons in your workplace. Search for `icon` and copy and paste the npm code into your terminal `import { icon_name } from "react-icons/fa";`
+
+### Deploy App
+
+Before you dig into this, I highly suggest you to at least build your front-end
+As mentioned above, we are going to use firebase to ease things out for us. Login in to your firebase account from your terminal using the command `firebase login`. After you've logged in, continue in your terminal with `firebase init`
+</br> -> Hosting </br>
+-> Use an existing project </br>
+-> clone </br>
+-> use as your public directory? : build </br>
+run `npm run build` on your terminal, creates a build directory with a production build of your app, and your app should be ready to be deployed. To deploy your app, run `firebase deploy`, click on the deployed link and just like that click on all the "okays" BOOM! thats your `Hosting URL` share it with your friends and enjoy.
