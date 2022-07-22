@@ -6,8 +6,15 @@
   max-width: 1500px;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .home_carousal {
-  width: 100%;
+  align: middle;
+  height: 450px;
+  width: 1500px;
   z-index: -1;
   margin-bottom: -150px;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));

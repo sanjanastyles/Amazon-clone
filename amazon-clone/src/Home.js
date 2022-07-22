@@ -1,16 +1,18 @@
 import React from "react";
 import "./Home.css";
 import Product from "./Product";
+import Carousel from "./Carousel";
 
 export default function Home() {
   return (
     <div className="home">
       <div className="home_container">
-        <img
+        <Carousel  />
+        {/* <img
           className="home_carousal"
           src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/PD22/GW/ACQ/PC_Hero_3000x1200_ho._CB631612836_.jpg"
           alt="Banner"
-        ></img>
+        ></img> */}
         <div className="home_row">
           <Product
             title="The invisible man"
