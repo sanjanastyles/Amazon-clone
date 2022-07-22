@@ -1,6 +1,6 @@
 # 2022
 
-## Installation
+## `Installation`
 
 ### React
 
@@ -8,7 +8,8 @@ Open your VSCode and press `ctrl + J` and type `npx create-react-app amazon-clon
 You should see the following </br>
 ![img](https://cdn.discordapp.com/attachments/947060629066354689/999316178239496352/unknown.png)
 
-and after you into the directory type `npm start` and hit enter.
+and after you into the directory type `npm start` and hit enter. Runs the app in the development mode.
+Open http://localhost:3000 to view it in your browser. The page will reload when you make changes. You may also see any lint errors in the console.
 
 I am using firebase.com to host my clone site. `Create console` and `create project` after the project is created we click the following button. Also run `npm i firebase` in your terminal.</br>
 ![img](https://cdn.discordapp.com/attachments/947060629066354689/999319460601139210/unknown.png)
@@ -36,4 +37,17 @@ As mentioned above, we are going to use firebase to ease things out for us. Logi
 -> Use an existing project </br>
 -> clone </br>
 -> use as your public directory? : build </br>
-run `npm run build` on your terminal, creates a build directory with a production build of your app, and your app should be ready to be deployed. To deploy your app, run `firebase deploy`, click on the deployed link and just like that click on all the "okays" BOOM! thats your `Hosting URL` share it with your friends and enjoy.
+run `npm run build` on your terminal, creates a build directory with a production build of your app.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+#### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+And your app should be ready to be deployed. To deploy your app, run `firebase deploy`, click on the deployed link and just like that click on all the "okays" BOOM! thats your `Hosting URL` share it with your friends and enjoy.
