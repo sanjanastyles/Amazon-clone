@@ -5,23 +5,23 @@ import "./Home.css";
 export default function Carousel() {
   const slides = [
     {
-        url: "https://images-eu.ssl-images-amazon.com/images/G/31/img20/Books/042021/1500-X-350-Deals-Books-GIF-Banner-Revised.gif",
-        title: "",
-      },
-    {
-      url: "https://images-eu.ssl-images-amazon.com/images/G/31/img19/Audio/NuRepublic/Days/Sale-Banner-1500-X-300.jpg",
+      url: "https://images-eu.ssl-images-amazon.com/images/G/31/img19/TVs/Philips/Compressed/V116207186_HETV-Philips-Ambilight_Philips_1500x300_01.jpg",
       title: "",
     },
     {
-      url: "https://images-eu.ssl-images-amazon.com/images/G/31/img17/AmazonBusiness/JanArt/Gateway/MainBanner_1500_300_1701.jpg",
+      url: "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Varun/Ref/Ref_1500x400_PC_store_header.gif",
       title: "",
     },
     {
-      url: "https://images-eu.ssl-images-amazon.com/images/G/31/img16/app/AppyHours/Page/Revised/1500x300_PC_banner.jpg",
+      url: "https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/2022/OHL/July/Hnk/PD22/Householdessentialstore/Ingress/PD_1500x300.gif",
       title: "",
     },
     {
-      url: "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Pantry/FEB_2020/SVD/STOREFRONT_BANNER/CORRECTED_MOV_FST/STOREFRONT_BANNER_1500X300._CB424201625_.jpg",
+      url: "https://technosports.co.in/wp-content/uploads/2021/10/amazon.gif",
+      title: "",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/G/31/sshabari/Kotrastore/New_Arrival_1500x300_header.gif",
       title: "",
     },
   ];

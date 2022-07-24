@@ -32,7 +32,7 @@
 .header_searchIcon {
   padding: 5px;
   height: 22px !important;
-  background-color: #f0c250;
+  background-image: linear-gradient(#faecc8, #f0c250);
 }
 
 .header_nav {
