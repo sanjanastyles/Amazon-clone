@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import "./App.css";
 import Header from "./Header";
 import Home from "./Home";
 import Checkout from "./Checkout";
@@ -44,6 +43,7 @@ export default function App() {
               <>
                 <Header />
                 <Checkout />
+                <Footer />
               </>
             }
           />
@@ -54,11 +54,11 @@ export default function App() {
               <>
                 <Header />
                 <Home />
+                <Footer />
               </>
             }
           />
         </Routes>
-        <Footer />
       </div>
     </Router>
   );
