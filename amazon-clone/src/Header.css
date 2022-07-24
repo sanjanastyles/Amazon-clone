@@ -23,7 +23,7 @@
 }
 
 .header_searchInput {
-  height: 12px;
+  height: 40px;
   padding: 10px;
   border: none;
   width: 100%;
@@ -31,8 +31,9 @@
 
 .header_searchIcon {
   padding: 5px;
-  height: 22px !important;
+  height: 40px !important;
   background-image: linear-gradient(#faecc8, #f0c250);
+  font-size: 30px;
 }
 
 .header_nav {
@@ -45,9 +46,14 @@
   flex-direction: column;
   margin-left: 10px;
   margin-right: 10px;
+  padding: 5px;
   color: #fff;
 }
 
+.header_item:hover,
+.header_basket:hover {
+  border: 1px solid #fff;
+}
 .header_item1 {
   font-size: 10px;
 }
@@ -59,6 +65,7 @@
 
 .header_basket {
   display: flex;
+  padding: 5px;
   align-items: center;
   color: #fff;
 }

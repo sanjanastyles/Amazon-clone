@@ -2,12 +2,21 @@ import React from "react";
 import "./Footer.css";
 
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+      /* you can also use 'auto' behaviour
+             in place of 'smooth' */
+    });
+  };
+
   return (
     <div>
       <div className="ToTop">
-        <p>Back to top</p>
+        <button onClick={scrollToTop}>Back to top</button>
       </div>
-      
+
       <div className="TopFooter_bg">
         <footer className="footer">
           <div className="footer-cols">
