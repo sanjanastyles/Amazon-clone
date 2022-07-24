@@ -3,6 +3,7 @@ import "./Checkout.css";
 import { useStateValue } from "./StateProvider";
 import CheckoutProduct from "./CheckoutProduct";
 import Subtotal from "./Subtotal";
+import Empty_cart from "./Empty_cart";
 
 export default function Checkout() {
   const [{ basket, user }] = useStateValue();
@@ -16,8 +17,12 @@ export default function Checkout() {
           alt="ad"
         />
         <div>
-          <h3>Hello,{!user ? "Guest" : user.email}</h3>
-          <h2 className="checkout_heading">Your shopping Basket</h2>
+          <h1>Hello,{!user ? "Guest" : user.email}</h1>
+          {basket.length === 0 ? (
+            <Empty_cart />
+          ) : (
+            <h2 className="checkout_heading">Your shopping Basket</h2>
+          )}
 
           {basket.map((item) => (
             <CheckoutProduct

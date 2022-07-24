@@ -1,0 +1,22 @@
+.empty_cart {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+.empty_cart h2,
+.empty_cart a {
+  display: flex;
+  justify-content: right;
+  background: #fff;
+  width: 50%;
+  float: left;
+}
+
+.empty_cart > img {
+  flex: 1 0 0%;
+  text-align: right;
+  max-width: 500px;
+}
