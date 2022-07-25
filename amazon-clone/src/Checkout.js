@@ -13,7 +13,7 @@ export default function Checkout() {
       <div className="checkout_left">
         <img
           className="checkout_ad"
-          src="https://thumbs.gfycat.com/AcrobaticAnimatedAdmiralbutterfly-size_restricted.gif"
+          src="https://m.media-amazon.com/images/G/01/AdProductsWebsite/images/AUX/ILB_BrightColors_Approved._TTW_.jpg"
           alt="ad"
         />
         <div>

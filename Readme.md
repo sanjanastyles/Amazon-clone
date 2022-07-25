@@ -53,3 +53,22 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 And your app should be ready to be deployed. To deploy your app, run `firebase deploy`, click on the deployed link and just like that click on all the "okays" BOOM! thats your `Hosting URL` share it with your friends and enjoy.
+
+### For Payments via Card
+
+Run the following commands `npm i @stripe/stripe-js` as well as `npm i @stripe/react-stripe-js` in your terminal.
+Upgrade your firebase account to Blaze Plan (PS: Its free). Or you can always use Express for it.
+
+Go to [Stripe.com](https://stripe.com/en-in) and create account. And then follow the image as below: </br>
+![img](https://cdn.discordapp.com/attachments/947060629066354689/1001161684557238325/unknown.png)</br>
+
+### For axios
+
+Run `npm i axios` in your terminal.</br>
+
+### Set-up Cloud
+
+In terminal `firebase init` and follow the image: </br>
+![img](https://cdn.discordapp.com/attachments/947060629066354689/1001179123621838848/unknown.png)</br>
+![img](https://cdn.discordapp.com/attachments/947060629066354689/1001179198418845716/unknown.png)</br>
+![img](https://cdn.discordapp.com/attachments/947060629066354689/1001179303440027690/unknown.png)</br>

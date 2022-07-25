@@ -40,6 +40,7 @@
 .product > button {
   background-image: linear-gradient(#faecc8, #f0c250);
   border: 1px solid;
+  cursor: pointer;
   padding: 8px 32px;
   margin-top: 10px;
   border-color: #a88734 #9c7e31 #846a29;

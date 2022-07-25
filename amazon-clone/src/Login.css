@@ -73,6 +73,7 @@
   color: rgba(0, 0, 0, 0.35);
   margin: 8px 0px;
 }
+
 .new::before,
 .new::after {
   content: "";
