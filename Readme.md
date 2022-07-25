@@ -2,7 +2,7 @@
 
 # [Live Demo](https://clone-d14cb.web.app/)
 
-## `Installation`
+## `Front-End Installation`
 
 ### React
 
@@ -13,6 +13,8 @@ You should see the following </br>
 and after you into the directory type `npm start` and hit enter. Runs the app in the development mode.
 Open http://localhost:3000 to view it in your browser. The page will reload when you make changes. You may also see any lint errors in the console.
 
+### Firebase
+
 I am using [firebase.com](https://console.firebase.google.com/u/0/) to host my clone site. `Create console` and `create project` after the project is created we click the following button. Also run `npm i firebase` in your terminal.</br>
 ![img](https://cdn.discordapp.com/attachments/947060629066354689/999319460601139210/unknown.png)
 </br>This is all we have to bother about, that said copy the code and paste in your new terminal.</br>
@@ -20,7 +22,7 @@ I am using [firebase.com](https://console.firebase.google.com/u/0/) to host my c
 ![step 3](https://cdn.discordapp.com/attachments/947060629066354689/999319127887970395/unknown.png)
 </br>and now lets `continue to console` </br>
 
-![img](https://cdn.discordapp.com/attachments/947060629066354689/999320341497262120/unknown.png) ![img](https://cdn.discordapp.com/attachments/947060629066354689/999320549467635722/unknown.png)
+![img](https://cdn.discordapp.com/attachments/947060629066354689/999320341497262120/unknown.png) </br> ![img](https://cdn.discordapp.com/attachments/947060629066354689/999320549467635722/unknown.png)
 
 </br>Create a new file in the `src` folder of `amazon-clone`, I am going to name it `firebase.js` and paste the copied code.
 
@@ -66,9 +68,19 @@ Go to [Stripe.com](https://stripe.com/en-in) and create account. And then follow
 
 Run `npm i axios` in your terminal.</br>
 
+## `Back-End Installation`
+
 ### Set-up Cloud
 
 In terminal `firebase init` and follow the image: </br>
 ![img](https://cdn.discordapp.com/attachments/947060629066354689/1001179123621838848/unknown.png)</br>
 ![img](https://cdn.discordapp.com/attachments/947060629066354689/1001179198418845716/unknown.png)</br>
 ![img](https://cdn.discordapp.com/attachments/947060629066354689/1001179303440027690/unknown.png)</br>
+
+### _**Keep Your Directory to `functions` while installing the next packages mentioned.**_
+
+### Express
+
+`npm i express` in your terminal, function directory along with that we are going to install `npm i cors` and `npm i stripe`. Get your Secret Key token from stripe website,
+
+Check the functioning of the backend we will run `firebase emulators:start`
