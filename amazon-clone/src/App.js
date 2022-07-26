@@ -5,6 +5,7 @@ import Home from "./Home";
 import Checkout from "./Checkout";
 import Login from "./Login";
 import Footer from "./Footer";
+import Orders from "./Orders";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -46,6 +47,16 @@ export default function App() {
             <>
               <Header />
               <Checkout />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/orders"
+          element={
+            <>
+              <Header />
+              <Orders />
               <Footer />
             </>
           }

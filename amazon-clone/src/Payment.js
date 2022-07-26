@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import CheckoutProduct from "./CheckoutProduct";
 import "./Payment.css";
 import { useStateValue } from "./StateProvider";
+import { db } from "./firebase";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import CurrencyFormat from "react-currency-format";
 import { getBasketTotal } from "./reducer";
@@ -24,7 +25,7 @@ export default function Payment() {
   useEffect(() => {
     const getClientSecret = async () => {
       const response = await axios({
-        method: "POST",
+        method: "post",
         // stripe requires currencies sub-units
         url: `/payments/create?total=${getBasketTotal(basket) * 100}`,
       });
@@ -46,17 +47,32 @@ export default function Payment() {
       })
       .then(({ paymentIntent }) => {
         // paymentIntent = payment confirmation
+
+        db.collection("users")
+          .doc(user?.id)
+          .collection("orders")
+          .doc(paymentIntent.id)
+          .set({
+            basket: basket,
+            amount: paymentIntent.amount,
+            created: paymentIntent.created,
+          });
+
         setSucceeded(true);
         setError(null);
         setProcessing(false);
 
+        dispatch({
+          type: "EMPTY_BASKET",
+        });
+
         navigate("/orders");
       });
   };
-  const HandleChange = async (e) => {
-    const { value } = e.target;
-    setDisabled(!value);
-    setError(value ? "" : "Please Enter Correct Value");
+
+  const HandleChange = (e) => {
+    setDisabled(e.empty);
+    setError(e.error ? e.error.message : "");
   };
 
   return (
