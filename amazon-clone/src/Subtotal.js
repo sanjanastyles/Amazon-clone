@@ -28,8 +28,8 @@ export default function Subtotal() {
         thousandSeparator={true}
         prefix={"$"}
       />
-
-      <button onClick={() => navigate("/payment")}>Proceed to Checkout</button>
+      {/* onClick={() => navigate("/payment")} */}
+      <button>Proceed to Checkout</button>
     </div>
   );
 }

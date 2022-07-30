@@ -39,10 +39,12 @@ export default function Header() {
             <span className="header_item2">Account & List</span>
           </div>
         </Link>
-        <div className="header_item">
-          <span className="header_item1">Returns</span>
-          <span className="header_item2">& Orders</span>
-        </div>
+        <Link to="/orders">
+          <div className="header_item">
+            <span className="header_item1">Returns</span>
+            <span className="header_item2">& Orders</span>
+          </div>
+        </Link>
         <Link to="/checkout">
           <div className="header_basket">
             <FaShoppingCart />

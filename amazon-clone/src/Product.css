@@ -64,6 +64,6 @@
   display: flex;
   flex: 1;
   margin: 5px;
-  max-width: 100%;
+  max-width: inherit;
   max-height: 100%;
 }

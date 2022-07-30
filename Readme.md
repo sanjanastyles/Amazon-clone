@@ -68,6 +68,9 @@ Go to [Stripe.com](https://stripe.com/en-in) and create account. And then follow
 
 Run `npm i axios` in your terminal.</br>
 
+### 
+`npm i moment`
+
 ## `Back-End Installation`
 
 ### Set-up Cloud
