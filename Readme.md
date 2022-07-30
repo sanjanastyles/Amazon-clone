@@ -68,7 +68,8 @@ Go to [Stripe.com](https://stripe.com/en-in) and create account. And then follow
 
 Run `npm i axios` in your terminal.</br>
 
-### 
+###
+
 `npm i moment`
 
 ## `Back-End Installation`
@@ -87,3 +88,9 @@ In terminal `firebase init` and follow the image: </br>
 `npm i express` in your terminal, function directory along with that we are going to install `npm i cors` and `npm i stripe`. Get your Secret Key token from stripe website,
 
 Check the functioning of the backend we will run `firebase emulators:start`
+
+## My Errors (Help me)
+
+1. My project on firebase.com should be on the Blaze plan (Even though I know it is "pay as you go" as an Indian teen, I don't want to risk my parent's money)
+2. I can't seem to get a successful transaction, while first error still remains, "processing" never ends. </br>
+   ![img](https://cdn.discordapp.com/attachments/947060629066354689/1002911048233406496/unknown.png)
