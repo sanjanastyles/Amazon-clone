@@ -1,6 +1,6 @@
 # July 2022
 
-# [Live Demo](https://clone-d14cb.web.app/)
+<!-- # [Live Demo](https://clone-d14cb.web.app/)-->
 
 ## `Front-End Installation`
 
